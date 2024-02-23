@@ -35,4 +35,5 @@ const Navbar = ({ setIsSidebarOpen, isSidebarOpen }) => {
   );
 };
 
+
 export default Navbar;
