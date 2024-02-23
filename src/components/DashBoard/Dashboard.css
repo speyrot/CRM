@@ -1,0 +1,39 @@
+/* Adjustments for the dashboard container to ensure it doesn't get hidden by the sidebar */
+.dashboard-container {
+    transition: margin-left 0.3s ease;
+    margin-left: 60px; /* Adjusted to match the thin sidebar's width */
+    margin-top: 20px; /* Adds some top margin for spacing */
+}
+  
+.sidebar-open .dashboard-container {
+    margin-left: 200px; /* Adjust this value to match your expanded sidebar's width */
+}
+  
+.dashboard-main {
+    background-color: #eeeeee; /* Light grey background, you can choose your color */
+    border-radius: 25px; /* Rounded corners for the tile look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    padding: 20px; /* Padding inside the tile */
+    margin: 20px; /* Adds margin around the tile for spacing */
+    height: calc(100vh - 40px); /* Adjust height to fill the screen, accounting for margin */
+    overflow-y: auto; /* Adds scroll for overflow content */
+}
+  
+  /* Additional styling for the list to match the tile's theme */
+.dashboard-container ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+}
+  
+.dashboard-container li {
+    padding: 10px 0; /* Adds padding for each list item */
+    border-bottom: 1px solid #dee2e6; /* Adds a separator */
+}
+  
+.dashboard-container li:last-child {
+    border-bottom: none; /* Removes separator for the last item */
+}
+  
+  
+  
+  

@@ -1,38 +1,16 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.body-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Ensures the NavBar is at the top */
+  min-height: 100vh;
+  background-color: #060606;
 }
 
-.App-link {
-  color: #61dafb;
+.content-wrapper {
+  transition: margin-left 0.3s ease; /* Smooth transition for the margin change */
+  margin-left: 0; /* Default state, sidebar is hidden */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-open .content-wrapper {
+  margin-left: 250px; /* Adjust content when sidebar is visible */
 }
